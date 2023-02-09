@@ -1,4 +1,4 @@
-"""tango_with_django_project URL Configuration
+"""zxt_test URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.urls import include
-from rango import views
+from zxt_test_app import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('rango/', include('rango.urls')),
+    path('zxt_test_app/', include('zxt_test_app.urls')),
     path('admin/', admin.site.urls),
 ]
